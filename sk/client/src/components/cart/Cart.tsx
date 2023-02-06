@@ -43,10 +43,10 @@ const Cart= ()=>{
                 </div>
                 <img
                   className=""
-                  src={item.url1}
+                  src={item.url2}
                   alt={item.name}
                   height="95px"
-                  width="105px"
+                  width="95px"
                 />
                 <div className="cart-item-properties">
                   <div className="cart-item-features">

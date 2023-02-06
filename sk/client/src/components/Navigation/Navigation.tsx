@@ -32,10 +32,10 @@ const Navigation: React.FC = () => {
         <CartPanel />
         {/* ***Sign Options*** */}
         <div className="nav-options">
-          <Link className="option-btns" to="/">
+          <Link className="option-btns" to="/signin">
             Sign In
           </Link>
-          <Link className="option-btns dark" to="/">
+          <Link className="option-btns dark" to="/signup">
             Sign Up
           </Link>
         </div>
