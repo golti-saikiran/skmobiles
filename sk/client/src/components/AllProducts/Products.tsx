@@ -3,6 +3,7 @@ import { Imobile } from "./mobileTypes";
 import { useNavigate } from "react-router";
 import { useAppDispatch } from "../ReduxFeatures/reduxhooks";
 import { addToCart } from "../ReduxFeatures/cartSlice";
+import { LoadingSpinner } from "../Spinner/LoadingSpinner";
 // import { useAppSelector } from "../ReduxFeatures/reduxhooks";
 
 export default function Products(): JSX.Element {
@@ -13,7 +14,7 @@ export default function Products(): JSX.Element {
 
   if (error) return <p>Something went wrong</p>;
 
-  if (loading) return <h2>Loading...</h2>;
+  if (loading) return <LoadingSpinner/>;
 
   return (
     <div className="container">

@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
- 
   padding: 0;
   box-sizing: border-box;
 }
 
 .App {
-  background-image: linear-gradient(90deg,white, rgb(150, 244, 255, 0.4));
+  /* background-image: linear-gradient(90deg,rgb(239, 84, 53),white, rgba(20, 237, 56, 1)); */
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -321,4 +320,26 @@
 .product-btn-container{
   display: flex;
   justify-content: space-between;
+}
+
+.homeimg{
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px gray;
+  margin: 1rem;
+}
+.tagline{
+  position:relative;
+  top:-70px;
+  font-size: medium;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 10;
+  text-transform: uppercase;
+  color:rgb(220, 230, 236);
+
+  text-shadow: 1px 1px black, 10px 10px 10px gray;
+
 }

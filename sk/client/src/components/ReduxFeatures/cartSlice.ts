@@ -43,15 +43,21 @@ export const CartSlice = createSlice({
       const itemIndex = state.cart.findIndex(
         (item) => item.id === action.payload
       );
+      if(state.cart[itemIndex].cartQuantity < 5){
       state.cart[itemIndex].cartQuantity += 1;
       state.totalCartAmount += state.cart[itemIndex].price;
+      }
     },
     decrementItem: (state, action: PayloadAction<number>) => {
       const itemIndex = state.cart.findIndex(
         (item) => item.id === action.payload
       );
-      state.cart[itemIndex].cartQuantity -= 1;
-      state.totalCartAmount -= state.cart[itemIndex].price;
+      if(state.cart[itemIndex].cartQuantity > 1){
+        state.cart[itemIndex].cartQuantity -= 1;
+        state.totalCartAmount -= state.cart[itemIndex].price;
+      }
+   
+      
     },
     resetCart: (state) => {
       state.totalCartAmount = 0;

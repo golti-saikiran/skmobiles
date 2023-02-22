@@ -4,6 +4,7 @@ import { useFetchById } from "../hooks/useFetchById";
 import { Imobile } from "../AllProducts/mobileTypes";
 import { useAppDispatch } from "../ReduxFeatures/reduxhooks";
 import { addToCart } from "../ReduxFeatures/cartSlice";
+import { LoadingSpinner } from "../Spinner/LoadingSpinner";
 
 
 const Product: React.FC = () => {
@@ -14,7 +15,7 @@ const Product: React.FC = () => {
   const { loading, error, data } = useFetchById(id);
   if (error) return <p>Something went wrong</p>;
 
-  if (loading) return <h2>Loading...</h2>;
+  if (loading) return <LoadingSpinner/>;
   const mobile: Imobile = data.mobileById;
   return (
     <div className="product-container">
