@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { useAppSelector } from "../ReduxFeatures/reduxhooks";
 import { Icon } from "@fluentui/react/lib/Icon";
 import { useAppDispatch } from "../ReduxFeatures/reduxhooks";
@@ -15,7 +14,6 @@ const AddIcon = () => <Icon iconName="Add" />;
 const RemoveIcon = () => <Icon iconName="Remove" />;
 
 const Cart= ()=>{
-  const navigate = useNavigate()
   const dispatch = useAppDispatch();
   const data = useAppSelector((state) => state.Cart.cart);
   const amount = useAppSelector((state) => state.Cart.totalCartAmount);
