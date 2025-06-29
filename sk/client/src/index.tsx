@@ -13,7 +13,7 @@ initializeIcons();
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  uri:"http://localhost:4000/",
+  uri:"https://skmobiles-backend.onrender.com/",
 
 })
 const root = ReactDOM.createRoot(
