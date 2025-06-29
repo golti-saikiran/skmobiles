@@ -31,6 +31,29 @@ _(Frontend only — GraphQL data integration via public API or mocks)_
 ```bash
 git clone https://github.com/golti-saikiran/skmobiles.git
 
-cd skmobiles/sk
+cd skmobiles/sk/server
 npm install
 npm start
+
+cd skmobiles/sk/client
+npm install
+npm start
+
+## 🔮 Future Enhancements
+✅ Add cart workflow using GraphQL mutations  
+🛍️ Integrate checkout UI  
+🔎 Add product search and filters  
+🌐 Build a GraphQL server for full-stack functionality  
+🧪 Add unit/component tests using Jest + React Testing Library  
+
+---
+
+## 📄 License  
+MIT License — free to use, modify, and share.
+
+---
+
+## 👨‍💻 Author  
+**Sai Kiran Golti**  
+🔗 GitHub: [@golti-saikiran](https://github.com/golti-saikiran)  
+🌐 Portfolio: [saikirangolti-portfolio.netlify.app](https://saikirangolti-portfolio.netlify.app)
