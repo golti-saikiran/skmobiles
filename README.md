@@ -26,18 +26,6 @@ _(Frontend only — GraphQL data integration via public API or mocks)_
 
 ---
 
-## 📦 Get Started Locally
-
-```bash
-git clone https://github.com/golti-saikiran/skmobiles.git
-
-cd skmobiles/sk/server
-npm install
-npm start
-
-cd skmobiles/sk/client
-npm install
-npm start
 
 ## 🔮 Future Enhancements
 ✅ Add cart workflow using GraphQL mutations  
@@ -57,3 +45,19 @@ MIT License — free to use, modify, and share.
 **Sai Kiran Golti**  
 🔗 GitHub: [@golti-saikiran](https://github.com/golti-saikiran)  
 🌐 Portfolio: [saikirangolti-portfolio.netlify.app](https://saikirangolti-portfolio.netlify.app)
+
+---
+
+## 📦 Get Started Locally
+
+```bash
+git clone https://github.com/golti-saikiran/skmobiles.git
+
+cd skmobiles/sk/server
+npm install
+npm start
+
+cd skmobiles/sk/client
+npm install
+npm start
+
