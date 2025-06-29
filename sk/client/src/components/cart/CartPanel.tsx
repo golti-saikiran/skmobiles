@@ -23,9 +23,6 @@ export const CartPanel: React.FunctionComponent = () => {
     deepSkyBlue: [{ color: "black" }, iconClass],
   });
 
-const closePanel= () =>{
-  // isOpen:dismissPanel
-}
 
   return (
     <div>
